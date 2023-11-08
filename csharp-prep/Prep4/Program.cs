@@ -30,7 +30,7 @@ class Program
     }
     int average = total/numbers.Count;
 
-    Console.WriteLine($"Total is {total}")
-    Console.WriteLine($"Average is {average}")
-    Console.WriteLine($"Maximum is {maximum}")
+    Console.WriteLine($"Total is {total}");
+    Console.WriteLine($"Average is {average}");
+    Console.WriteLine($"Maximum is {maximum}");
 }
