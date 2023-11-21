@@ -20,7 +20,7 @@ public class Scripture{
         }
         _Reference = new Reference(book, chapter, verse);
 
-        for (int i = 2; i < units.Length - 2; i++){
+        for (int i = 2; i < units.Length; i++){
             Word word = new Word(units[i]);
             _Words.Add(word);
         }
@@ -30,7 +30,7 @@ public class Scripture{
     public void Display(){
         string result = $"{_Reference.GetText()} ";
         foreach (Word word in _Words){
-            result += $"{word.DisplayText} ";
+            result += $"{word.DisplayText()} ";
         }
         Console.WriteLine(result);
     }
