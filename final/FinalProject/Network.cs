@@ -153,6 +153,25 @@ public class Network{
         return outputList;
     }
 
+    public void RemoveInput(){
+
+    }
+    public void RemoveOutput(){
+
+    }
+    public void RemoveHiddenNeuron(){
+
+    }
+    public void RemoveConnection(){
+
+    }
+    public void ChangeActivationFunction(){
+
+    }
+    public void ChangeConnectionWeight(){
+        
+    }
+
     public void Quit(){
 
     }
