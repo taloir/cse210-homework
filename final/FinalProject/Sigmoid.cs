@@ -9,6 +9,7 @@ public class Sigmoid:Neuron{
         }
         product = 1.0 / (1.0 + Math.Exp(-product));
         _ActivationValue = product;
+        _Signals.Clear();
     }
 
     public override string GetSummary(){

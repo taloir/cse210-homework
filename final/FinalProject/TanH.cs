@@ -9,6 +9,7 @@ public class TanH:Neuron{
         }
         product = Math.Tanh(product);
         _ActivationValue = product;
+        _Signals.Clear();
     }
 
     public override string GetSummary(){

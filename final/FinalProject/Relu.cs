@@ -11,6 +11,7 @@ public class Relu:Neuron{
             product = 0;
         }
         _ActivationValue = product;
+        _Signals.Clear();
     }
 
     public override string GetSummary(){

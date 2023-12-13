@@ -8,6 +8,7 @@ public class Output:Neuron{
             product += input;
         }
         _ActivationValue = product;
+        _Signals.Clear();
     }
     public override string GetSummary(){
         string summary = $"{_InnovationNumber}";
