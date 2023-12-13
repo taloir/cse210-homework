@@ -1,12 +1,14 @@
 public class Input: Neuron{
     public Input(int innovation, double value):base(innovation){
-        _Signals.Add(value);
+        _ActivationValue= value;
     }
     public override void Activate(){
-        _ActivationValue = _Signals[0];
     }
     public override string GetSummary(){
-        string summary = $"{_InnovationNumber}-[Value:{_Signals[0]}]";
+        string summary = $"{_InnovationNumber}-[Value:{_ActivationValue}]";
         return summary;
+    }
+    public void SetValue(double value){
+        _ActivationValue = value;
     }
 }

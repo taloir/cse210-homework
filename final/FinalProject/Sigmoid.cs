@@ -3,14 +3,12 @@ public class Sigmoid:Neuron{
     }
 
     public override void Activate(){
-        float product = 0;
-        foreach(float input in base._Signals){
+        double product = 0;
+        foreach(double input in _Signals){
             product += input;
         }
-        if(product < 0){
-            product = 0;
-        }
-        base._ActivationValue = product;
+        product = 1.0 / (1.0 + Math.Exp(-product));
+        _ActivationValue = product;
     }
 
     public override string GetSummary(){

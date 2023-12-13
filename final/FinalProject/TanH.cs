@@ -1,5 +1,5 @@
-public class Relu:Neuron{
-    public Relu(int innovation) : base(innovation){
+public class TanH:Neuron{
+    public TanH(int innovation) : base(innovation){
     }
 
     public override void Activate(){
@@ -7,14 +7,12 @@ public class Relu:Neuron{
         foreach(double input in _Signals){
             product += input;
         }
-        if(product < 0){
-            product = 0;
-        }
+        product = Math.Tanh(product);
         _ActivationValue = product;
     }
 
     public override string GetSummary(){
-        string summary = $"{_InnovationNumber}: Relu";
+        string summary = $"{_InnovationNumber}: TanH";
         return summary;
     }
 }

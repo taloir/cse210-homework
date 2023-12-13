@@ -21,7 +21,7 @@ public class Connection{
         string summary = $"{_InnovationNumber}({_Target},{_Weight})";
         return summary;
     }
-    public int GetId(){
+    public int GetInnovation(){
         return _InnovationNumber;
     }
     public int GetTarget(){
